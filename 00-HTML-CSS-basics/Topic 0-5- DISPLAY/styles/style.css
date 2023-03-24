@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.principal-section{
+   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+
+    /* background-color: #f4f1f1; */
+    background-color: #000000;
+    position: relative;
+    color: white;
+}
+.text{
+    padding-top:2%;
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+}
+.text h1{
+    font-size: 21px;
+    font-weight: 300;
+}
+.text h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+.text a{
+    margin-left: 44%;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.text p{
+    margin-left: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: oblique;
+    width:800px;
+    text-align: justify;
+}
+.text span{
+    color: rgb(42, 171, 246);
+    font-weight: 800;
+}
+.img-class{
+    margin-top: 150px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto ; /*donde va el auto, representa cada columna*/
+    padding: 10px;
+ 
+  
+}
+.image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 400px;
+    height: 0;
+    transition: 0.5s ease-in;
+    border-radius: 10px;
+  }
+  
+  .image-container:hover .overlay {
+    height: 100%;
+  
+  }
+  
+  .overlay p {
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+
+ 
+  @media (max-width: 1200px) {
+    .img-class{
+ 
+        grid-template-columns: auto auto auto ; /*donde va el auto, representa cada columna*/
+
+    }
+  }
+
+
+  @media (max-width: 800px) {
+    .img-class{
+        grid-template-columns: auto ; /*donde va el auto, representa cada columna*/ 
+        margin-top: 0;
+    }
+
+  }
