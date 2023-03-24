@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 4</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section class="principal section">
+        <div class="principal-text">
+        
+            <img src="img/undraw_halloween_re_2kq1.svg" alt="">
+            <h1><strong>Topic 4</strong> - LocalStorage - IndexedDB - SVG - CANVAS</h1>
+            <h2>¡Bienvenido al ultimo topic!</h2>
+        </div>
+    
+        <div class="principal-LocalStorage-IndexedDB">
+            <h2>¡Almacena con LocalStorage y IndexdDB!</h2>
+            <textarea name="TextArea" id="myTextArea" cols="30" rows="10" placeholder="Ingresa el texto aqui.."></textarea>
+            <br>
+            <div class="buttons-list">
+                <button id="button" onclick="saveTextToLocalStorage()"class="unstyle button">Guardar en localStorage</button>
+                <button id="button" onclick="saveTextToIndexedDB()" class="unstyle button" >Guardar en IndexedDB</button>
+                <button id="button" onclick="clearText()" class="unstyle button">Borrar todo</button>
+            </div>
+        </div>
+
+   
+    </section>
+
+    <section class="second section">
+        <h2>¡Sube tus imagenes favoritas!</h2>
+        <div class="drag-area">
+            <h2>arrastra y suelta archivos</h2>
+            <span>O</span>
+            <button class="button unstyle">Selecciona tus archivos</button>
+            <!---El valor del hidden input es que mantiene el secreto asociado con la información y automáticamente lo incluye cuando el formulario es enviado al servidor.-->
+            <!--multiple. Hace que acepte muchos archivos-->
+            <input type="file" name="" id="input-file" hidden multiple>
+        </div>
+        <div id="preview">
+
+        </div>
+    </section>
+    <section class="third section">
+        <h2>¡Mira este cuadrado hecho en Canvas!</h2>
+        <canvas id="canvas" width="700" height="500">
+
+        </canvas>
+        
+
+    </section>
+
+    <footer>
+        <p>Topic finalizado por @Alejo Boglione</p>
+    </footer>
+    <script src="component/main.js"></script>
+    <script src="component/archiver.js"></script>
+    <script src="component/animation.js"></script>
+</body>
+</html>
