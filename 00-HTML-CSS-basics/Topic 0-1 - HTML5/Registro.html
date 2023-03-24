@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Crea otro archivo .html. Crea una tabla para tus gastos. -->
+        <h1>Registro de usuarios</h1>
+    </header>
+    <!--SOLUCION SIN USAR JS-->
+    <form action="" method="post">
+        <!-- se utiliza para determinar el ID del elemento de entrada al que se debe asociar el título-->
+		<label for="nombre" ">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" pattern="[a-zA-Z]" required>
+		<label for="apellido">Apellido:</label>
+		<input type="text" id="apellido" name="apellido" pattern="[a-zA-Z]" required>
+		<label for="email">Correo electrónico:</label>
+        <!--Usamos expresiones regulares-->
+		<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"> 
+		<label for="cumpleanos">Fecha de nacimiento:</label>
+		<input type="date" id="cumpleanos" name="cumpleanos" required >
+		<label for="deporte">Deporte favorito:</label>
+		<select id="deporte" name="deporte" required>
+			<option value="">-- Seleccione un deporte --</option>
+			<option value="futbol">Fútbol</option>
+			<option value="baloncesto">Baloncesto</option>
+			<option value="tenis">Tenis</option>
+			<option value="natacion">Natación</option>
+			<option value="otro">Otro</option>
+		</select>
+		<label for="biografia">Biografía:</label>
+		<textarea id="biografia" name="biografia"></textarea>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpiar">
+	</form>
+</body>
+</html>
+

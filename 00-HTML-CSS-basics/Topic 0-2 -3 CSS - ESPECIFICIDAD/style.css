@@ -1,0 +1,155 @@
+/* Agregue una global font definition (en el elemento html) con 
+un valor de 14 px, utilizando una font-family que desees. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Centre el texto del encabezado y pie de página.*/
+/*Existen varias maneras de centrar, por ejemplo utilizar display:flex*/
+/*pero vamos a utilizar otra tecnica*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    max-height: 100%;
+   
+
+}
+
+.headerFirst{
+    text-align: center;
+    height: 90px;
+    padding: 40px;
+    background-color: rgb(85, 83, 83);
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 800;
+    margin-top:19px;
+}
+
+.principal-content{
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;/*horizontal*/
+    gap:40px;
+    
+    
+}
+.principal-content_section{
+    background-color: rgb(85, 83, 83);
+    border-radius: 10px;
+    width: 53%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(172, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.section-article{
+ 
+    height: 250px;
+}
+
+
+
+.nav-bar-left{
+    background-color:  rgb(85, 83, 83);
+    border-radius: 10px;
+    height: 700px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-left: 5px;
+}
+
+aside{
+    background-color: rgb(85, 83, 83);
+    border-radius: 10px;
+    height: 700px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.div-section {
+    width: 80%;
+    height: 70%;
+  
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerFinal{
+    text-align: center;
+    height: 90px;
+    padding: 40px;
+    background-color: rgb(85, 83, 83);
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 800;
+}
+
+.cont{
+    background-color: #d6d1d1;
+    height:200px;
+}
+
+
+/*Si el atributo de clase termina con r (ejemplo header, footer), el fondo debe ser magenta.*/
+*[class$="r"] {
+    background-color: magenta;
+}
+/*Si el atributo de clase contiene una a (ejemplo nav) pero NO termina con r, el fondo debe ser 
+azul*/
+/*El * nos indica que este selector debe seleccionar los 
+elementos sólo si tienen la cadena "a" en cualquier lugar dentro 
+del valor del atributo, utilizo el :not para negar la 
+condicion de selecionar los atributos cuya clase termina en r,
+por lo tanto seleccionatodos los atributos cuya clase contiene una 
+"a" y no termina en r*/
+
+/* *[class*="a"]:not([class$="r"]) {
+    background-color: blue;
+} */
+
+/*¿Cómo podría agregar peso a la definición de fuente global(global font definition) para 
+ganarse las clases agregadas por el punto 3?
+Utilizando un !important, eso lo explica la especificidad en css. !important esta en el nivel mas alto, y establece que debe ser(no puede cambiar). 
+* {
+    font-size: 14px !important;
+}
